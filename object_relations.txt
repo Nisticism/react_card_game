@@ -1,0 +1,34 @@
+
+
+User <---------> Games
+  |		   |
+  |		   |
+  |		   |
+  v		   v
+Scores		 Rounds
+
+
+
+
+---- User ----
+
+User has many Games
+User has many Scores
+
+---- Score ----
+
+Score belongs to Game
+Score belongs to User
+
+---- Game ----
+
+Game has many Users
+Game has one Score
+Game has many Rounds
+
+---- Round ----
+
+Round has many Users
+Round has one Winner (User)
+
+
