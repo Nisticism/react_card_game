@@ -1,7 +1,8 @@
 class User < ApplicationRecord
 
+    has_many :games
+    has_many :rounds
     has_many :scores
-    has_many :rounds, through: :scores
 
     has_many :created_mazes, class_name: "Mazes"
 
